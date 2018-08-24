@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author LUCCI
  * @date 2018/8/24 17:33
- * @Description:
+ * @Description: 发消息
  * @Modify:
  */
 @RestController

@@ -11,7 +11,7 @@ import org.springframework.jms.core.JmsMessagingTemplate;
 /**
  * @author LUCCI
  * @date 2018/8/24 16:55
- * @Description:
+ * @Description: 读取配置文件
  * @Modify:
  */
 @Configuration
