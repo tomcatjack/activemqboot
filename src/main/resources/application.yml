@@ -1,0 +1,11 @@
+#mq配置
+activemq:
+#broker:代理消息的发送和接收
+  broker-url: tcp://192.168.3.72:61616?jms.optimizeAcknowledge=true&jms.optimizeAcknowledgeTimeOut=30000&jms.redeliveryPolicy.maximumRedeliveries=10
+  user: admin
+  password: admin
+  packages:
+  trust-all: true
+  pub-sub-domain: true
+jms:
+  pub-sub-domain: false #true代表发布订阅模式,false代表队列模式
