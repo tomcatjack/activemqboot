@@ -19,7 +19,7 @@ public class TestMessageController {
     @RequestMapping("/send")
     public String sendMessage() {
         mqUtils.sendQueueMessage("TestQ","队列模式的消息11");
-        mqUtils.sendTopicMessage("TestT","发布订阅模式的消息111");
+        mqUtils.sendTopicMessage("TestT1","发布订阅模式的消息111");
         return "success";
     }
 }

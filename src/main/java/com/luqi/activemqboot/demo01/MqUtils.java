@@ -38,7 +38,7 @@ public class MqUtils {
      */
     public void sendTopicMessage(String target, Object message){
         Topic topic = new ActiveMQTopic(target);
-        jmsMessagingTemplate.convertAndSend(target,message);
+        jmsMessagingTemplate.convertAndSend(topic,message);
     }
 
 

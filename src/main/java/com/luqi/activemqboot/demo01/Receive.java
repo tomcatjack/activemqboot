@@ -15,13 +15,18 @@ import org.springframework.stereotype.Component;
 public class Receive {
 
     @JmsListener(destination = "TestQ")
-    public void receiveQueue(String text) {
+    public void receiveQueue(Object text) {
         log.info("ConsumerQueue收到的报文为:"+text);
     }
 
     @JmsListener(destination = "TestT")
-    public void receiveTopic(String text) {
+    public void receiveTopic(Object text) {
         log.info("ConsumerTopic收到的报文为:"+text);
+    }
+
+    @JmsListener(destination = "TestT1")
+    public void receiveTopic1(Object text) {
+        log.info("ConsumerTopic1收到的报文为:"+text);
     }
 
 
